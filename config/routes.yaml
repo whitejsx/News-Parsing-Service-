@@ -1,0 +1,15 @@
+# config/routes/attributes.yaml
+# config/routes.yaml
+Ariticle:
+    path: /
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\ArticleController::index
+    methods:    GET|HEAD
+
+    # if the action is implemented as the __invoke() method of the
+    # controller class, you can skip the '::method_name' part:
+    # controller: App\Controller\BlogController
+
+# kernel:
+#     resource: App\Kernel
+#     type: attribute
